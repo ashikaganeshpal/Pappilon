@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pappilon Industrial Canteen & Housekeeping</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; }
+    header { background-color: #ffffff; color:rgb(8, 87, 46); padding: 20px; text-align: center; }
+    header img { max-width: 200px; height: auto; margin-bottom: 10px; }
+    header h1 { margin-bottom: 5px; font-size: 2.2rem; }
+    header p { font-size: 1.2rem; color: rgb(8, 87, 46); }
+    nav { background-color: rgb(237, 164, 7); padding: 10px 0; }
+    nav ul { display: flex; justify-content: center; list-style: none; }
+    nav li { margin: 0 15px; }
+    nav a { color: rgb(7, 45, 12); text-decoration: none; font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;}
+    nav a:hover { text-decoration: underline; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    .highlight { color: #004c99; font-weight: bold; }
+    .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    h2 { margin-bottom: 20px; font-size: 1.8rem; color: #004c99; }
+    ul { list-style-type: disc; padding-left: 20px; }
+    footer { background-color: rgb(8, 87, 46); color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    .contact { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-top: 20px; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+    table, th, td { border: 1px solid #ddd; }
+    th, td { padding: 12px; text-align: left; }
+    th { background-color: #004c99; color: white; }
+    tr:nth-child(even) { background-color: #f2f2f2; }
+    .page { display: none; }
+    .active { display: block; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #333;
+      text-align: center;
+    }
+
+    .header {
+      background-image:url(); /* Replace with your actual image */
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.4);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .title-container {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      color: white;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .client-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .client-logos img {
+      height: 60px;
+      width: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .client-logos img:hover {
+      transform: scale(1.1);
+    }
+
+    .footer {
+      font-size: 14px;
+      color: #888;
+      padding: 30px 10px;
+    }
+
+    @media (max-width: 768px) {
+      .client-logos {
+        gap: 20px;
+      }
+
+      .client-logos img {
+        height: 40px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./images/pappilon_logo.jpg" style="height: 80px; width: 250px;" alt="Pappilon Logo">
+    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 900;">Industrial Canteen & Housekeeping Contractor</h1>
+    <p style="font-weight: 700;"><i>35+ Years of Excellence in Catering & Facility Management Services</i></p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" onclick="showPage('home')" style="font-size: 150%;">Home</a></li>
+      <li><a href="about-us.html" onclick="showPage('about')" style="font-size: 150%;">About Us</a></li>
+      <li><a href="ourservice.html" onclick="showPage('services')" style="font-size: 150%;">Our Services</a></li>
+      <li><a href="Companyinfomation.html" onclick="showPage('company-info')" style="font-size: 150%;">Company Information</a></li>
+      <li><a href="ourclients.html" onclick="showPage('clients')" style="font-size: 150%;">Our Clients</a></li>
+      
+    </ul>
+  </nav>
+  <!-- Clients Page -->
+  <br>
+
+
+      <h1 style="font-weight: 700;font-family: Georgia, 'Times New Roman', Times, serif;color: rgb(8, 87, 46);"><i>Our Clients</i></h1>
+    </div>
+  </div>
+
+  <div class="description">
+    At Pappilon, we are proud to serve industry-leading clients who trust us with their facility and housekeeping needs. Here are some of our valuable partners.
+  </div>
+
+  <div class="client-logos">
+    <img src="./images/ongc.jpg" alt="Ongc">
+    <img src="./images/gail.jpg" alt="GAIL">
+    <img src="./images/IOCL.jpg" alt="IOCL">
+    <img src="./images/SUZLON.jpg" alt="Suzlon">
+    <img src="./images/gati shakti.jpg" alt="Gati shakti">
+    <img src="./images/gsfc.jpg" alt="GSFC">
+    <img src="./images/nhs.jpg" alt="National Highspeed">
+    <img src="./images/nddb.jpg" alt="NDDB">
+    <img src="./images/ITC.jpg" alt="ITC ltd">
+    <img src="./images/IDMC.jpg" alt="IDMC">
+    <img src="./images/IRMA.jpg" alt="IRMA">
+    
+
+  </div>
+
+    
+  <footer>
+    <p>&copy;  Pappilon Industrial Canteen & Housekeeping Contractor. All Rights Reserved.</p>
+  </footer>
+
+

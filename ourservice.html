@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pappilon Industrial Canteen & Housekeeping</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; }
+    header { background-color: #ffffff; color:rgb(8, 87, 46); padding: 20px; text-align: center; }
+    header img { max-width: 200px; height: auto; margin-bottom: 10px; }
+    header h1 { margin-bottom: 5px; font-size: 2.2rem; }
+    header p { font-size: 1.2rem; color: rgb(8, 87, 46); }
+    nav { background-color: rgb(237, 164, 7); padding: 10px 0; }
+    nav ul { display: flex; justify-content: center; list-style: none; }
+    nav li { margin: 0 15px; }
+    nav a { color: rgb(7, 62, 33); text-decoration: none; font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    .highlight { color: #004c99; font-weight: bold; }
+    .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: rgb(255, 255, 255); padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    h2 { margin-bottom: 20px; font-size: 1.8rem; color: rgb(8, 87, 46); font-family: Georgia, 'Times New Roman', Times, serif; }
+    ul { list-style-type: disc; padding-left: 20px; }
+    footer { background-color: rgb(8, 87, 46); color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    .contact { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-top: 20px; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+    table, th, td { border: 1px solid #ddd; }
+    th, td { padding: 12px; text-align: left; }
+    th { background-color: #004c99; color: white; }
+    tr:nth-child(even) { background-color: #f2f2f2; }
+    .page { display: none; }
+    .active { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./images/pappilon_logo.jpg" style="height: 80px; width: 250px;" alt="Pappilon Logo">
+    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 900;">Industrial Canteen & Housekeeping Contractor</h1>
+    <p style="font-weight: 700;"><i>35+ Years of Excellence in Catering & Facility Management Services</i></p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" onclick="showPage('home')" style="font-size: 150%;">Home</a></li>
+      <li><a href="about-us.html" onclick="showPage('about')" style="font-size: 150%;">About Us</a></li>
+      <li><a href="ourservice.html" onclick="showPage('services')" style="font-size: 150%;">Our Services</a></li>
+      <li><a href="Companyinfomation.html" onclick="showPage('company-info')" style="font-size: 150%;">Company Information</a></li>
+      <li><a href="ourclients.html" onclick="showPage('clients')" style="font-size: 150%;">Our Clients</a></li>
+      
+    </ul>
+  </nav>
+  <br>
+  
+    <h2 style="margin-left: 150px;margin-right: 150px;margin-top: 20px;"><i>Our Services</i></h2>
+    <div style="margin-left: 150px;margin-right: 150px;margin-top: 20px;" class="service-grid">
+      <div class="card">
+        <strong>🍱 Industrial & Office Catering</strong><br>
+        Tailored meals for industrial, office, and educational setups. We provide nutritious and hygienic food services customized to your workforce requirements.
+      </div>
+      <div class="card">
+        <strong>🏨 Guest House Management</strong><br>
+        Comprehensive management of transit accommodations including food services, cleaning, and maintenance for corporate guest houses.
+      </div>
+      <div class="card">
+        <strong>🛢️ Rig Catering</strong><br>
+        Specialized food services for onshore and offshore drilling sites, ensuring quality meals in challenging environments.
+      </div>
+      <div class="card">
+        <strong>🧹 Housekeeping</strong><br>
+        Professional cleaning and maintenance services for workplaces, ensuring clean and hygienic environments.
+      </div>
+      <div class="card">
+        <strong>🌿 Horticulture</strong><br>
+        Maintenance and upkeep of factory gardens, greenspaces, and landscaped areas.
+      </div>
+      <div class="card">
+        <strong>🏥 Hospital & Hostel Facilities</strong><br>
+        Nutritious food services and sanitation management for hospitals and student hostels.
+      </div>
+      <div class="card">
+        <strong>🏫 Institutional Catering</strong><br>
+        Catering services for educational institutions, training centers, and other institutional setups.
+      </div>
+      <div class="card">
+        <strong>🍽️ Restaurant Management</strong><br>
+        Management of hotels and restaurants up to three-star level, including central kitchen operations.
+      </div>
+    </div>
+    
+    <h3 style="color:rgb(8, 87, 46) ;margin-left: 150px;margin-right: 150px;margin-top: 20px;font-size: 25px;font-family: Georgia, 'Times New Roman', Times, serif;"><i>Central Kitchens & Restaurants</i></h3>
+    <p style="margin-left: 150px;margin-right: 150px;margin-top: 20px;">We operate several central kitchens and restaurants to support our catering operations:</p>
+    <ul style="margin-left: 150px;margin-right: 150px;margin-top: 20px;">
+      <li>Hotel Abhinandan, Airoli, Sector –4 New Mumbai</li>
+      <li>Thailand food center, centre point (Vasi) New Mumbai</li>
+      <li>Abhinandan, Central Kitchen at Airoli, Mumbai</li>
+      <li>Pappilon, Central Kitchen, Vadodara</li>
+    </ul>
+  </section>
+  <footer>
+    <p>&copy;  Pappilon Industrial Canteen & Housekeeping Contractor. All Rights Reserved.</p>
+  </footer>
